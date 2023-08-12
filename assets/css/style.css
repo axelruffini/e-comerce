@@ -4,7 +4,7 @@ body{
     padding: 0%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 140px 1000px 140px;
+    grid-template-rows: 140px 100% 140px;
     grid-template-areas:" header" 
                         " main"
                         " footer";
@@ -19,7 +19,7 @@ header{
 a{
     color: black;
     margin: 10px;
-    
+    text-decoration: none;
 }
 
 main{
@@ -37,7 +37,7 @@ section{
     justify-content: center;
     height: 100%;
     flex-wrap: wrap;
-    margin-top: 10px;
+    margin-top: 40px;
 }
 
 article{
@@ -46,31 +46,34 @@ article{
     align-items: center;
     text-align: center;
     background-color: rgb(255, 255, 255);
-    padding: 1%;
-    margin: 5px 0px 5px 0px;
-    height: 300px;
+    height: max-content;
     width: 250px;
 }
-
 
 img{
     height: 60%;
     width: 70%;
 }
 
-button{
+.btn-grupo{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn{
     background-color: #153243;
     color: white;
     border-style: none;
-    border-radius: 80px;
-    padding: 15px;
+    border-radius: 100px;
+    padding: 15px 30px 15px 30px;
+    margin-left: 5px;
+    margin-bottom: 20px;
 }
 
-.carrito{
-    height: 50px;
-    width: 50px;
-    color: aliceblue;
+ul{
+    display: none;
 }
+
 
 @media(min-width: 1000px){
 
@@ -119,7 +122,7 @@ button{
         flex-direction: row;
         justify-content: center;
         height: 100%;
-        flex-wrap: wrap;
+        flex-wrap:wrap;
     }
     
     article{
@@ -141,13 +144,15 @@ button{
         transform:rotate(20px);
     }
     
-    
+    ul{
+        display:contents;
+    }
+
     li{
         text-align: center;
         list-style: none;
         margin: 20px;
     }
-    
     
     .alineado-row{
         display: flex;

@@ -3,17 +3,23 @@ body{
     margin: 0%;
     padding: 0%;
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 100%;
     grid-template-rows: 140px 1000px 140px;
-    grid-template-areas:" header header" 
-                        " main   aside"
-                        " footer footer";
+    grid-template-areas:" header" 
+                        " main"
+                        " footer";
 }
 
 header{
     grid-area: header;
     text-align: center;
     background-color: rgb(255, 255, 255);
+}
+
+a{
+    color: black;
+    margin: 10px;
+    
 }
 
 main{
@@ -24,6 +30,7 @@ aside{
     margin: 10%;
     background-color: rgb(255, 255, 255);
     grid-area: aside;
+
 }
 
 footer{
@@ -37,6 +44,7 @@ section{
     justify-content: center;
     height: 100%;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 article{
@@ -46,16 +54,49 @@ article{
     text-align: center;
     background-color: rgb(255, 255, 255);
     padding: 1%;
-    margin: 1%;
+    margin: 5px 0px 5px 0px;
     height: 300px;
     width: 250px;
 }
 
-article:hover{
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.323);
-    transition: 0.2s;
-    transform: scale(102%);
+
+li{
+    text-align: center;
+    list-style: none;
+    margin: 20px;
 }
+
+
+.alineado-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.selector-colores1{
+    margin: 5px;
+    background-color: red;
+    border-radius: 100px;
+    height: 35px;
+    width: 35px;
+}
+.selector-colores2{
+    margin: 5px;
+    border-color: black;
+    background-color: rgb(0, 51, 255);
+    border-radius: 100px;
+    height: 35px;
+    width: 35px;
+}
+.selector-colores3{
+    margin: 5px;
+    border-color: black;
+    background-color: rgb(255, 230, 0);
+    border-radius: 100px;
+    height: 35px;
+    width: 35px;
+}
+
 
 img{
     height: 60%;
@@ -67,9 +108,144 @@ button{
     color: white;
     border-style: none;
     border-radius: 80px;
-    padding: 20px;
+    padding: 15px;
 }
 
-button:hover{
-    background-color: rgb(0, 190, 123);
+.carrito{
+    height: 50px;
+    width: 50px;
+    color: aliceblue;
+}
+
+@media(min-width: 1000px){
+
+    body{
+        background-color: rgb(240, 240, 240);
+        margin: 0%;
+        padding: 0%;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 140px 1000px 140px;
+        grid-template-areas:" header header" 
+                            " main   aside"
+                            " footer footer";
+    }
+    
+    header{
+        grid-area: header;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    a{
+        color: black;
+        margin: 10px;
+        
+    }
+    
+    main{
+        grid-area: main;
+    }
+    
+    aside{
+        margin: 10%;
+        background-color: rgb(255, 255, 255);
+        grid-area: aside;
+    
+    }
+    
+    footer{
+        grid-area: footer;
+        background-color: black;
+    }
+    
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        padding: 1%;
+        margin: 1%;
+        height: 300px;
+        width: 250px;
+    }
+    
+    article:hover{
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.323);
+        transition: 0.2s;
+        transform: scale(102%);
+        transform:rotate(20px);
+    }
+    
+    
+    li{
+        text-align: center;
+        list-style: none;
+        margin: 20px;
+    }
+    
+    
+    .alineado-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .selector-colores1{
+        margin: 5px;
+        background-color: red;
+        border-radius: 100px;
+        height: 35px;
+        width: 35px;
+    }
+    .selector-colores2{
+        margin: 5px;
+        border-color: black;
+        background-color: rgb(0, 51, 255);
+        border-radius: 100px;
+        height: 35px;
+        width: 35px;
+    }
+    .selector-colores3{
+        margin: 5px;
+        border-color: black;
+        background-color: rgb(255, 230, 0);
+        border-radius: 100px;
+        height: 35px;
+        width: 35px;
+    }
+    
+    
+    img{
+        height: 60%;
+        width: 70%;
+    }
+    
+    button{
+        background-color: #153243;
+        color: white;
+        border-style: none;
+        border-radius: 80px;
+        padding: 15px;
+    }
+    
+    button:hover{
+        background-color: black;
+    }
+    
+    .carrito{
+        height: 50px;
+        width: 50px;
+        color: aliceblue;
+    }
+    
 }

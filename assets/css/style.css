@@ -70,10 +70,16 @@ img{
     margin-bottom: 20px;
 }
 
+.carrito{
+    display: flex;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
 ul{
     display: none;
 }
-
 
 @media(min-width: 1000px){
 

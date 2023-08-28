@@ -20,6 +20,10 @@ header{
     background-color: rgb(255, 255, 255);
 }
 
+h1{
+    margin: 0px;
+}
+
 a{
     color: black;
     margin: 10px;
@@ -85,15 +89,20 @@ ul{
     display: none;
 }
 
+.Grupolistado-carrito{
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 100%;
+    border-radius: 30px;
+}
+
 @media(min-width: 1000px){
 
     body{
-        background-color: rgb(240, 240, 240);
-        margin: 0%;
-        padding: 0%;
-        display: grid;
         grid-template-columns: 80% 20%;
-        grid-template-rows: 140px 1000px 140px;
+        grid-template-rows: auto 1000px 140px;
         grid-template-areas:" header header" 
                             " main   aside"
                             " footer footer";
@@ -228,7 +237,7 @@ ul{
     }
 
     .muestraPC{
-        display: block;
+        display: flex;
     }
     
 }

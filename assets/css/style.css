@@ -4,7 +4,7 @@ body{
     padding: 0%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 140px 100% 140px;
+    grid-template-rows: auto 100% 140px;
     grid-template-areas:" header" 
                         " main"
                         " footer";
@@ -13,6 +13,10 @@ body{
 header{
     grid-area: header;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 7% 0% 7%;
     background-color: rgb(255, 255, 255);
 }
 
@@ -55,26 +59,26 @@ img{
     width: 70%;
 }
 
+.muestraPC{
+    display: none;
+}
+
 .btn-grupo{
     display: flex;
     flex-direction: row;
 }
 
 .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #153243;
     color: white;
     border-style: none;
     border-radius: 100px;
-    padding: 15px 30px 15px 30px;
+    padding: 10px 20px;
     margin-left: 5px;
     margin-bottom: 20px;
-}
-
-.carrito{
-    display: flex;
-    position: absolute;
-    right: 5%;
-    top: 5%;
 }
 
 ul{
@@ -99,6 +103,7 @@ ul{
         grid-area: header;
         text-align: center;
         background-color: rgb(255, 255, 255);
+        flex-direction: column;
     }
     
     a{
@@ -214,11 +219,16 @@ ul{
     button:hover{
         background-color: black;
     }
-    
-    .carrito{
-        height: 50px;
-        width: 50px;
-        color: aliceblue;
+
+    .icon-laterales{
+        position: absolute;
+        right: 7%;
+        top: 5%;
+        
+    }
+
+    .muestraPC{
+        display: block;
     }
     
 }

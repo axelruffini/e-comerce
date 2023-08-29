@@ -5,7 +5,7 @@ const productos = [
         id: 1,
         nombre: "Abrigo marron",
         descripcion: "Este producto es un abrigo",
-        imagen: "../assets/img/Ropa/ropa1.png",
+        imagen: "./assets/img/Ropa/ropa1.png",
         precio: 400,
         categoria: "Abrigos"
     },
@@ -13,7 +13,7 @@ const productos = [
         id: 2,
         nombre: "Remera basica",
         descripcion: "Este producto es una remera",
-        imagen: "../assets/img/Ropa/ropa2.png",
+        imagen: "./assets/img/Ropa/ropa2.png",
         precio: 200,
     },
     {

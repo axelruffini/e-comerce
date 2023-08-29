@@ -11,7 +11,7 @@ const productos = [
     },
     {
         id: 2,
-        nombre: "Remera basicaaaaaa",
+        nombre: "Remera basica",
         descripcion: "Este producto es una remera",
         imagen: "../assets/img/Ropa/ropa2.png",
         precio: 200,

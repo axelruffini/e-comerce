@@ -47,5 +47,3 @@ const productos = [
     `;
         sectionProductos.append(contenido);
     });
-
-

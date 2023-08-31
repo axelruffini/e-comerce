@@ -26,8 +26,13 @@ h1{
 
 a{
     color: black;
-    margin: 10px;
+    margin: 100px;
     text-decoration: none;
+}
+
+.categoria{
+    display: block;
+    margin-bottom: 10%;
 }
 
 main{
@@ -239,7 +244,7 @@ p{
     .icon-laterales{
         position: absolute;
         right: 7%;
-        top: 5%;
+        top: 3%;
         
     }
 

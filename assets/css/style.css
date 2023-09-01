@@ -21,12 +21,11 @@ header{
 }
 
 h1{
-    margin: 0px;
+    margin: 20px;
 }
 
 a{
     color: black;
-    margin: 100px;
     text-decoration: none;
 }
 
@@ -129,10 +128,14 @@ p{
     
     a{
         color: black;
-        margin: 10px;
         
     }
-    
+    .categoria{
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+
     main{
         grid-area: main;
     }

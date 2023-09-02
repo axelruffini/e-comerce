@@ -12,26 +12,52 @@ body{
 
 header{
     grid-area: header;
-    text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
     padding: 0% 7% 0% 7%;
-    background-color: rgb(255, 255, 255);
+    background-color:#153243;
 }
 
 h1{
     margin: 20px;
+    margin-top: 50px;
+    color: white;
+}
+
+.barraTemp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    height: 22px;
+    width: 300px;
+    color: #153243;
+    padding: 10px;
+}
+
+.icon-laterales{
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    display: flex;
+    margin-top: 20px;
 }
 
 a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 .categoria{
     display: block;
     margin-bottom: 10%;
+    color: white;
+
 }
 
 main{
@@ -67,8 +93,11 @@ img{
     width: 70%;
 }
 
-.muestraPC{
+.muestra-En-PC{
     display: none;
+}
+.muestra-En-mobile{
+    display: flex;
 }
 
 .btn-grupo{
@@ -93,7 +122,7 @@ ul{
     display: none;
 }
 
-.Grupolistado-carrito{
+.Grupolistado-carrito{ 
     margin: 3%;
     display: flex;
     justify-content: center;
@@ -109,30 +138,38 @@ p{
     margin: 5% 0% 0% 0%;
 }
 
-@media(min-width: 1000px){
+@media(min-width: 700px){
 
     body{
-        grid-template-columns: 80% 20%;
-        grid-template-rows: auto 1000px 140px;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: auto 90% 140px;
         grid-template-areas:" header header" 
-                            " main   aside"
+                            " aside   main"
                             " footer footer";
     }
     
     header{
         grid-area: header;
         text-align: center;
-        background-color: rgb(255, 255, 255);
         flex-direction: column;
     }
-    
-    a{
-        color: black;
-        
+
+    .icon-laterales{
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        display: flex;
+        margin-top: 20px;
     }
+
     .categoria{
         margin-bottom: 20px;
         margin-right: 20px;
+    }
+
+    .barraTemp{
+        height: 20px;
+        width: 500px;
     }
 
 
@@ -144,7 +181,6 @@ p{
         margin: 10%;
         background-color: rgb(255, 255, 255);
         grid-area: aside;
-    
     }
     
     footer{
@@ -159,17 +195,11 @@ p{
         height: 100%;
         flex-wrap:wrap;
     }
-    
+
     article{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
         background-color: rgb(255, 255, 255);
         padding: 1%;
         margin: 1%;
-        height: max-content;
-        width: 250px;
     }
     
     article:hover{
@@ -244,15 +274,12 @@ p{
         background-color: black;
     }
 
-    .icon-laterales{
-        position: absolute;
-        right: 7%;
-        top: 3%;
-        
+    .muestra-En-PC{
+        display:flex;
+        margin: 0px;
     }
-
-    .muestraPC{
-        display: flex;
+    .muestra-En-mobile{
+        display: none;
     }
     
 }

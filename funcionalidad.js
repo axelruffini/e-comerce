@@ -4,7 +4,6 @@ const productos = [
     {
         id: 1,
         nombre: "Abrigo marron",
-        descripcion: "Este producto es un abrigo",
         imagen: "./assets/img/Ropa/ropa1.png",
         precio: 400,
         categoria: "Abrigos"
@@ -12,16 +11,35 @@ const productos = [
     {
         id: 2,
         nombre: "Remera basica",
-        descripcion: "Este producto es una remera",
         imagen: "./assets/img/Ropa/ropa2.png",
         precio: 200,
     },
     {
         id: 3,
         nombre: "Gorro de lana",
-        descripcion: "Este producto es un gorro para el frio",
         imagen: "./assets/img/Ropa/ropa3.png",
         precio: 110,
+    },
+    {
+        id: 4,
+        nombre: "Chaqueta de Cuero Negra",
+        imagen: "./assets/img/Ropa/ropa2.png",
+        precio: 450,
+        categoria: "Chaquetas"
+    },
+    {
+        id: 5,
+        nombre: "Pantalones Vaqueros Clásicos",
+        imagen: "./assets/img/Ropa/ropa1.png",
+        precio: 250,
+        categoria: "Pantalones"
+    },
+    {
+        id: 6,
+        nombre: "Bufanda de Lana Tejida",
+        imagen: "./assets/img/Ropa/ropa3.png",
+        precio: 35,
+        categoria: "Accesorios"
     }
 ];
 
@@ -31,7 +49,6 @@ const productos = [
         contenido.innerHTML = `
         <img src="${producto.imagen}" alt="">
         <h3>${producto.nombre}</h3>
-        <p>${producto.descripcion}</p>
         <p>$${producto.precio}</p>
         <div class="btn-grupo">
             <a href="./pages/articulo.html" class="btn">ver</a>

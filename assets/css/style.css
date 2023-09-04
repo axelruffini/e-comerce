@@ -15,7 +15,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:#153243;
+    background: rgb(21,50,67);
+    background: linear-gradient(180deg, rgba(21,50,67,1) 0%, rgba(33,66,85,1) 100%);
 }
 
 h1{
@@ -26,6 +27,7 @@ h1{
 
 .icon-laterales{
     display: flex;
+    gap: 20px;
 }
 
 a{

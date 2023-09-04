@@ -56,7 +56,7 @@ const productos = [
             <lord-icon
                 src="https://cdn.lordicon.com/udbbfuld.json"
                 trigger="hover"
-                colors="primary:#ffffff"
+                colors="primary:#00000"
                 style="width:25px;height:25px">
             </lord-icon>
             </a>

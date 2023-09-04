@@ -4,7 +4,7 @@ body{
     padding: 0%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: auto 100% 140px;
+    grid-template-rows: 100px 100% 140px;
     grid-template-areas:" header" 
                         " main"
                         " footer";
@@ -13,39 +13,19 @@ body{
 header{
     grid-area: header;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 0% 7% 0% 7%;
     background-color:#153243;
 }
 
 h1{
-    margin: 20px;
-    margin-top: 50px;
+    margin: 0px 50px;
     color: white;
 }
 
-.barraTemp{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 100px;
-    margin-bottom: 20px;
-    height: 22px;
-    width: 300px;
-    color: #153243;
-    padding: 10px;
-}
 
 .icon-laterales{
-    position: absolute;
-    top: 1px;
-    right: 10px;
     display: flex;
-    margin-top: 20px;
 }
 
 a{
@@ -79,6 +59,7 @@ section{
 }
 
 article{
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,13 +90,25 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #ffffff;
+    color:#153243;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 12px;
+    padding: 10px 0px;
+    margin: 20px 5px;
+    width: 100px;
+    height: 30px;
+}
+
+.btn:hover{
     background-color: #153243;
     color: white;
-    border-style: none;
-    border-radius: 100px;
-    padding: 10px 20px;
-    margin-left: 5px;
-    margin-bottom: 20px;
+}
+
+.btn-IMG{
+    width: 30px;
+    height: 30px;
 }
 
 ul{
@@ -139,49 +132,22 @@ p{
 }
 
 @media(min-width: 700px){
-
-    body{
-        grid-template-columns: 20% 80%;
-        grid-template-rows: auto 90% 140px;
-        grid-template-areas:" header header" 
-                            " aside   main"
-                            " footer footer";
-    }
     
     header{
         grid-area: header;
-        text-align: center;
-        flex-direction: column;
-    }
-
-    .icon-laterales{
-        position: absolute;
-        top: 50px;
-        right: 50px;
-        display: flex;
-        margin-top: 20px;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
     }
 
     .categoria{
-        margin-bottom: 20px;
-        margin-right: 20px;
+        margin: 0px 10px;
     }
-
-    .barraTemp{
-        height: 20px;
-        width: 500px;
-    }
-
 
     main{
         grid-area: main;
     }
-    
-    aside{
-        margin: 10%;
-        background-color: rgb(255, 255, 255);
-        grid-area: aside;
-    }
+
     
     footer{
         grid-area: footer;
@@ -192,14 +158,13 @@ p{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        height: 100%;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
+        gap: 2%;
     }
 
     article{
         background-color: rgb(255, 255, 255);
         padding: 1%;
-        margin: 1%;
     }
     
     article:hover{
@@ -231,24 +196,7 @@ p{
         border-radius: 100px;
         height: 35px;
         width: 35px;
-    }
-    .selector-colores2{
-        margin: 5px;
-        border-color: black;
-        background-color: rgb(0, 51, 255);
-        border-radius: 100px;
-        height: 35px;
-        width: 35px;
-    }
-    .selector-colores3{
-        margin: 5px;
-        border-color: black;
-        background-color: rgb(255, 230, 0);
-        border-radius: 100px;
-        height: 35px;
-        width: 35px;
-    }
-    
+    }    
     
     img{
         height: 60%;
@@ -260,18 +208,30 @@ p{
         flex-direction: row;
     }
     
+    
     .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        color:#153243;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 12px;
+        padding: 10px 0px;
+        margin: 20px 5px;
+        width: 100px;
+        height: 30px;
+    }
+
+    .btn:hover{
         background-color: #153243;
         color: white;
-        border-style: none;
-        border-radius: 100px;
-        padding: 15px 30px 15px 30px;
-        margin-left: 5px;
-        margin-bottom: 10px;
     }
-    
-    button:hover{
-        background-color: black;
+
+    .btn-IMG{
+        width: 30px;
+        height: 30px;
     }
 
     .muestra-En-PC{

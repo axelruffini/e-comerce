@@ -8,36 +8,41 @@
 </head>
 <body>
     <header>
-        <div class="icon-laterales">
-            <a href="../pages/carrito.html">
-                <lord-icon src="https://cdn.lordicon.com/udbbfuld.json" trigger="hover" colors="primary:#ffffff"
-                    style="width:35px;height:35px">
-                </lord-icon>
-            </a>
-
-            <lord-icon src="https://cdn.lordicon.com/hbvyhtse.json" trigger="hover" colors="primary:#ffffff"
-                style="width:35px;height:35px" class="muestra-En-PC">
-            </lord-icon>
-
-            <lord-icon src="https://cdn.lordicon.com/fcrbbplx.json" trigger="hover" colors="primary:#ffffff"
-                style="width:35px;height:35px" class="muestra-En-mobile">
-            </lord-icon>
-        </div>
+        <lord-icon src="https://cdn.lordicon.com/fcrbbplx.json" trigger="hover" colors="primary:#ffffff"
+            style="width:35px;height:35px" class="muestra-En-mobile">
+        </lord-icon> <!-- BOTON DE MENU HAMBURGUESA (no se muestra en la vista de PC)-->
 
         <a href="../index.html">
             <h1> E-Comerce </h1>
-        </a>
-
-        <div class="barraTemp">
-            <p>Buscar</p>
-        </div>
+        </a> <!-- Nombre de la pagina -->
 
         <div class="muestra-En-PC">
             <a href="../index.html" class="categoria">Hombres</a>
             <a href="../index.html" class="categoria">Mujeres</a>
             <a href="../index.html" class="categoria">Outlet</a>
             <a href="../index.html" class="categoria">Accesorios</a>
+        </div> <!-- CATEGORIAS (no se muestra en la vista mobile)-->
+
+        <div class="icon-laterales"> <!-- Grupo para botones de la derecha -->
+            
+            <lord-icon
+                src="https://cdn.lordicon.com/xfftupfv.json"
+                trigger="hover"
+                colors="primary:#ffffff"
+                style="width:35px;height:35px" class="muestra-En-PC">
+            </lord-icon>
+
+            <lord-icon src="https://cdn.lordicon.com/hbvyhtse.json" trigger="hover" colors="primary:#ffffff"
+            style="width:35px;height:35px" class="muestra-En-PC">
+            </lord-icon> <!-- BOTON PERFIL (no se muestra en la vista mobile) -->
+    
+            <a href="../index.html"> <!-- BOTON CARRITO (Se muestra siempre) -->
+                <lord-icon src="https://cdn.lordicon.com/udbbfuld.json" trigger="hover" colors="primary:#ffffff"
+                style="width:35px;height:35px">
+                </lord-icon>
+            </a>
         </div>
+
         
     </header>
 

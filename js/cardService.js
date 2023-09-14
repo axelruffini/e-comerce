@@ -17,10 +17,19 @@ function agregarAlCarrito(producto){
         }
         localStorage.setItem("articulos", JSON.stringify(nuevaMemoria));
     }
+    actualizarNumeroCarrito();
 }
 
 function getNuevoProductoParaMemoria(producto){
     const nuevoProducto = producto;
     nuevoProducto.canidad = 1;
     return nuevoProducto;
+}
+
+
+const contadorCarritoElement = document.getElementById("contadorCarrito");
+function actualizarNumeroCarrito(){
+    const memoria = JSON.parse(localStorage.getItem("articulos"));
+    const contador = memoria.reduce((acum, current) => acum+current.canidad,0 );
+    contadorCarritoElement.innerText = contador;
 }

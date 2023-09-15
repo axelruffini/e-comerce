@@ -24,6 +24,9 @@ h1{
     color: white;
 }
 
+h3{
+    color: #ffffff;
+}
 
 .icon-laterales{
     display: flex;
@@ -34,6 +37,7 @@ a{
     color: white;
     text-decoration: none;
 }
+
 
 .categoria{
     display: block;
@@ -92,15 +96,13 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
-    color:#153243;
-    border-width: 1px;
-    border-style: solid;
+    background-color: #153243;
+    border-style: none;
     border-radius: 12px;
     padding: 10px 0px;
     margin: 20px 5px;
-    width: 100px;
-    height: 30px;
+    width: 200px;
+    height: 60px;
 }
 
 .btn:hover{

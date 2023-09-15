@@ -7,7 +7,16 @@ function crearTarjetasProductos (productos){
         <img src="${producto.imagen}" alt="">
         <h3>${producto.nombre}</h3>
         <p>$${producto.precio}</p>
-        <button href="" class="btn" id="${producto.id}"></button>
+        
+        <button class="btn" id="${producto.id}">
+        <h3>Comprar</h3>
+        <lord-icon
+            src="https://cdn.lordicon.com/udbbfuld.json"
+            trigger="hover"
+            colors="primary:#ffffff"
+            style="width:30px;height:30px">
+        </lord-icon>
+        </button>
     `;
         contenedortarjetas.appendChild(nuevoArticulo);
         nuevoArticulo.getElementsByTagName("button")[0].addEventListener("click",()=>agregarAlCarrito(producto))

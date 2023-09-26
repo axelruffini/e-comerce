@@ -25,7 +25,7 @@ h1{
 }
 
 h3{
-    color: #ffffff;
+    color: #000000;
 }
 
 .icon-laterales{
@@ -101,18 +101,21 @@ img{
     border-radius: 12px;
     padding: 10px 0px;
     margin: 20px 5px;
-    width: 200px;
-    height: 60px;
+    width: 150px;
+    height: fit-content;
 }
 
 .btn:hover{
-    background-color: #153243;
     color: white;
 }
 
 .btn-IMG{
     width: 30px;
     height: 30px;
+}
+
+.btn-txt{
+    color: white;
 }
 
 ul{
@@ -210,22 +213,6 @@ p{
     .btn-grupo{
         display: flex;
         flex-direction: row;
-    }
-    
-    
-    .btn{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #ffffff;
-        color:#153243;
-        border-style: solid;
-        border-width: 1px;
-        border-radius: 12px;
-        padding: 10px 0px;
-        margin: 20px 5px;
-        width: 100px;
-        height: 30px;
     }
 
     .btn:hover{

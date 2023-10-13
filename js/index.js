@@ -4,19 +4,23 @@ function crearTarjetasProductos (productos){
     productos.forEach(producto => {
         const nuevoArticulo = document.createElement("article");
         nuevoArticulo.innerHTML = `
-        <img src="${producto.imagen}" alt="">
-        <h3>${producto.nombre}</h3>
-        <p>$${producto.precio}</p>
-        
-        <button class="btn" id="${producto.id}">
-            <h3 class="btn-txt">Comprar</h3>
-            <lord-icon
-                src="https://cdn.lordicon.com/udbbfuld.json"
-                trigger="hover"
-                colors="primary:#ffffff"
-                style="width:30px;height:30px">
-            </lord-icon>
-        </button>
+        <div>
+            <img src="${producto.imagen}" alt="" class="card-img">
+        </div>
+
+        <div class="divAlign">
+            <h3>${producto.nombre}</h3>
+            <p>$${producto.precio}</p>
+            
+            <button class="btn" id="${producto.id}">
+                <lord-icon
+                    src="https://cdn.lordicon.com/udbbfuld.json"
+                    trigger="hover"
+                    colors="primary:#ffffff"
+                    style="width:30px;height:30px">
+                </lord-icon>
+            </button>
+        </div>
     `;
         contenedortarjetas.appendChild(nuevoArticulo);
         nuevoArticulo.getElementsByTagName("button")[0].addEventListener("click",()=>agregarAlCarrito(producto))

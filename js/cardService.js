@@ -1,6 +1,7 @@
 function agregarAlCarrito(producto){
     const memoria = JSON.parse(localStorage.getItem("articulos"));
     console.log(memoria);
+
     if(!memoria){
         const nuevoArticulo = producto; //cambiar nuevoarticulo por nuevoproducto
         nuevoArticulo.canidad=1;
@@ -20,6 +21,18 @@ function agregarAlCarrito(producto){
     actualizarNumeroCarrito();
 }
 
+function restarAlCarrito(producto){
+    const memoria = JSON.parse(localStorage.getItem("articulos"));
+    const indiceProducto = memoria.findIndex(articulos => articulos.id === producto.id);
+    if (memoria[indiceProducto].canidad === 1){
+        memoria.splice(indiceProducto,1);
+    }else{
+        memoria[indiceProducto].canidad--;
+    }
+    localStorage.setItem("articulos", JSON.stringify(memoria));
+
+}
+
 function getNuevoProductoParaMemoria(producto){
     const nuevoProducto = producto;
     nuevoProducto.canidad = 1;
@@ -33,3 +46,5 @@ function actualizarNumeroCarrito(){
     const contador = memoria.reduce((acum, current) => acum+current.canidad,0 );
     contadorCarritoElement.innerText = contador;
 }
+
+actualizarNumeroCarrito();

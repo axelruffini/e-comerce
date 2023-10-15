@@ -15,7 +15,7 @@ function crearTarjetasProductos() {
                 <button>
                     -
                 </button>
-                <span id="contadorCarrito">0</span>
+                <span class="cantidad">${producto.cantidad}</span>
                 <button>
                     +
                 </button>

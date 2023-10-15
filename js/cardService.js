@@ -30,7 +30,6 @@ function restarAlCarrito(producto){
         memoria[indiceProducto].cantidad--;
     }
     localStorage.setItem("articulos", JSON.stringify(memoria));
-
 }
 
 function getNuevoProductoParaMemoria(producto){

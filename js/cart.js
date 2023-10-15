@@ -1,7 +1,7 @@
 const contenedortarjetas = document.getElementById("sectionProductos")
 
 function crearTarjetasProductos() {
-    contenedortarjetas. innerHTML = "";
+    contenedortarjetas.innerHTML = "";
     const productos = JSON.parse(localStorage.getItem("articulos"));
     if (productos && productos.length > 0) {
 
@@ -27,7 +27,6 @@ function crearTarjetasProductos() {
                 .getElementsByTagName("button")[1]
                 .addEventListener("click", () => {
                     agregarAlCarrito(producto);
-
                 });
                 nuevoArticulo
                 .getElementsByTagName("button")[0]

@@ -11,12 +11,11 @@ function crearTarjetasProductos() {
         <div class="divAlign">
             <h3>${producto.nombre}</h3>
             <p>$${producto.precio}</p>
-
             <div>
                 <button>
                     -
                 </button>
-                <span> 0 </span>
+                <span id="contadorCarrito">0</span>
                 <button>
                     +
                 </button>

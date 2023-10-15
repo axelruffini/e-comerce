@@ -66,13 +66,21 @@ footer {
   background-color: black;
 }
 
-section {
+.listado {
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: 950px;
   flex-wrap: wrap;
   margin-top: 40px;
+}
+
+.listado-Carrito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
 article {
@@ -161,6 +169,11 @@ p {
   margin: 5% 0% 0% 0%;
 }
 
+.listado-carrito {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 700px) {
   header {
     grid-area: header;
@@ -186,12 +199,17 @@ p {
     grid-area: footer;
     background-color: black;
   }
-  section {
+  .listado {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2%;
+  }
+  .listado-Carrito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   article {
     background-color: rgb(255, 255, 255);

@@ -22,21 +22,21 @@ const articulos = [
     {
         id: 4,
         nombre: "Chaqueta de Cuero Negra",
-        imagen: "./assets/img/Ropa/ropa2.png",
+        imagen: "./assets/img/Ropa/ropa4.png",
         precio: 450,
         categoria: "Chaquetas"
     },
     {
         id: 5,
         nombre: "Pantalones Vaqueros Clásicos",
-        imagen: "./assets/img/Ropa/ropa1.png",
+        imagen: "./assets/img/Ropa/ropa5.png",
         precio: 250,
         categoria: "Pantalones"
     },
     {
         id: 6,
         nombre: "Bufanda de Lana Tejida",
-        imagen: "./assets/img/Ropa/ropa3.png",
+        imagen: "./assets/img/Ropa/ropa6.png",
         precio: 35,
         categoria: "Accesorios"
     }

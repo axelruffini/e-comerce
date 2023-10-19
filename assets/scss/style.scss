@@ -105,7 +105,7 @@ article{
 .divAlign{
     display: flex;
     flex-direction: column;
-    text-align: start;
+    text-align: center;
     width: 80%;
 }
 
@@ -140,6 +140,7 @@ article{
     height: 50px;
 }
 
+
 .btn:hover{
     color: white;
 }
@@ -151,6 +152,16 @@ article{
 
 .btn-txt{
     color: rgb(0, 0, 0);
+}
+
+.btn2{
+    background-color: #153243;
+    border-style: none;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: xx-large;
 }
 
 ul{
@@ -176,6 +187,11 @@ p{
 .listado-carrito{
     display: flex;
     flex-direction: column;
+}
+
+.cantidad{
+    font-size: xx-large;
+    margin: 0px 10px;
 }
 
 @media(min-width: 700px){

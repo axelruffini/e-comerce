@@ -12,11 +12,11 @@ function crearTarjetasProductos() {
             <h3>${producto.nombre}</h3>
             <p>$${producto.precio}</p>
             <div>
-                <button>
+                <button class="btn2">
                     -
                 </button>
                 <span class="cantidad">${producto.cantidad}</span>
-                <button>
+                <button class="btn2">
                     +
                 </button>
             </div>

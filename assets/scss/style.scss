@@ -16,6 +16,10 @@ header{
     align-items: center;
     justify-content: center;
     background: rgb(255, 255, 255);
+
+    position:fixed;
+    width: 100%;
+    height: 100px;
 }
 
 h1{
@@ -54,12 +58,13 @@ a{
 }
 
 .cont-carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color: #7be86a;
     padding: 1px 7px;
     border-radius: 100px;
-    position: absolute;
-    right: 6%;
-    top: 5px;
 }
 
 main{
@@ -162,6 +167,7 @@ article{
     height: 50px;
     color: white;
     font-size: xx-large;
+    margin-bottom: 10px;
 }
 
 ul{

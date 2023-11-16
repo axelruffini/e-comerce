@@ -21,7 +21,7 @@ const articulos = [
     },
     {
         id: 4,
-        nombre: "Chaqueta de Cuero Negra",
+        nombre: "Chaqueta de Cuero",
         imagen: "./assets/img/Ropa/ropa4.jpg",
         precio: 450,
         categoria: "Chaquetas"

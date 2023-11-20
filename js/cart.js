@@ -9,6 +9,7 @@ function crearTarjetasProductos() {
             const nuevoArticulo = document.createElement("article");
             nuevoArticulo.innerHTML = `
         <div class="divAlign">
+            <img src="../${producto.imagen}" alt="">
             <h3>${producto.nombre}</h3>
             <p>$${producto.precio}</p>
             <div>

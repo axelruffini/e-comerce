@@ -15,7 +15,7 @@ function crearTarjetasProductos (productos){
             <button class="btn" id="${producto.id}">
                 <lord-icon
                     src="https://cdn.lordicon.com/udbbfuld.json"
-                    trigger="hover"
+                    trigger="click"
                     colors="primary:#ffffff"
                     style="width:30px;height:30px">
                 </lord-icon>

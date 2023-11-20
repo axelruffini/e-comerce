@@ -28,7 +28,7 @@ const articulos = [
     },
     {
         id: 5,
-        nombre: "Pantalones Vaqueros Clásicos",
+        nombre: "Vaqueros Clásicos",
         imagen: "./assets/img/Ropa/ropa5.jpg",
         precio: 250,
         categoria: "Pantalones"

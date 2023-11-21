@@ -14,9 +14,8 @@
 <body>
 
     <header>
-        <lord-icon src="https://cdn.lordicon.com/fcrbbplx.json" trigger="hover" colors="primary:#000000"
-            style="width:35px;height:35px" class="muestra-En-mobile">
-        </lord-icon> <!-- BOTON DE MENU HAMBURGUESA (no se muestra en la vista de PC)-->
+        <svg xmlns="http://www.w3.org/2000/svg" class="muestra-En-mobile" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+        <!-- BOTON DE MENU HAMBURGUESA (no se muestra en la vista de PC)-->
 
         <a href="./index.html">
             <h1> E-Comerce </h1>
@@ -39,13 +38,15 @@
                 style="width:35px;height:35px" class="muestra-En-PC">
             </lord-icon> <!-- BOTON PERFIL (no se muestra en la vista mobile) -->
 
-            <a href="./pages/carrito.html"> <!-- BOTON CARRITO (Se muestra siempre) -->
-                <lord-icon src="https://cdn.lordicon.com/udbbfuld.json" trigger="hover" colors="primary:#000000"
-                    style="width:35px;height:35px">
-                </lord-icon>
-            </a>
-            
-            <h3 class="cont-carrito" id="contadorCarrito">0</h3>
+            <div class="carrito">
+                <a href="./pages/carrito.html"> <!-- BOTON CARRITO (Se muestra siempre) -->
+                    <lord-icon src="https://cdn.lordicon.com/udbbfuld.json" trigger="hover" colors="primary:#000000"
+                        style="width:35px;height:35px">
+                    </lord-icon>
+                </a>
+                
+                <h3 class="cont-carrito" id="contadorCarrito">0</h3>
+            </div>
             
         </div>
     </header>

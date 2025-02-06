@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 header {
   grid-area: header;
   display: flex;
@@ -9,7 +10,7 @@ header {
   top: 0;
   left: 0;
   z-index: 2;
-  background: rgba(255, 255, 255, 0.735);
+  background: rgba(243, 255, 106, 0.735);
   backdrop-filter: blur(60.4px);
   -webkit-backdrop-filter: blur(11.4px);
 }
@@ -27,6 +28,9 @@ header {
 h1 {
   margin: 0px 10px;
   color: rgb(0, 0, 0);
+  font-family: "Bangers", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h3 {
@@ -88,11 +92,11 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #153243;
+  background-color: #f3ff71;
   border-style: none;
   border-radius: 100px;
   margin: 20px 5px;
-  width: 50px;
+  width: 100px;
   height: 50px;
 }
 
@@ -106,7 +110,7 @@ p {
 }
 
 .btn2 {
-  background-color: #153243;
+  background-color: #f3ff71;
   border-style: none;
   border-radius: 100px;
   width: 50px;
@@ -114,6 +118,11 @@ p {
   color: white;
   font-size: xx-large;
   margin-bottom: 10px;
+}
+
+.card-img {
+  height: 270px;
+  width: 250px;
 }
 
 html {

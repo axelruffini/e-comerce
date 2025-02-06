@@ -11,14 +11,8 @@ function crearTarjetasProductos (productos){
         <div class="divAlign">
             <h3>${producto.nombre}</h3>
             <p>$${producto.precio}</p>
-            
             <button class="btn" id="${producto.id}">
-                <lord-icon
-                    src="https://cdn.lordicon.com/udbbfuld.json"
-                    trigger="click"
-                    colors="primary:#ffffff"
-                    style="width:30px;height:30px">
-                </lord-icon>
+                <h3>agregar</h3>
             </button>
         </div>
     `;

@@ -2,42 +2,15 @@
 const articulos = [
     {
         id: 1,
-        nombre: "Abrigo marron",
-        imagen: "./assets/img/Ropa/ropa1.jpg",
-        precio: 400,
+        nombre: "Coca-Cola",
+        imagen: "./assets/img/Ropa/coca.webp",
+        precio: 3.155,
         categoria: "Abrigos"
     },
     {
         id: 2,
-        nombre: "Remera basica",
-        imagen: "./assets/img/Ropa/ropa2.jpg",
-        precio: 200,
+        nombre: "Soda saldan Sifon 2L",
+        imagen: "./assets/img/Ropa/soda.webp",
+        precio: 1.192,
     },
-    {
-        id: 3,
-        nombre: "Gorro de lana",
-        imagen: "./assets/img/Ropa/ropa3.jpg",
-        precio: 110,
-    },
-    {
-        id: 4,
-        nombre: "Chaqueta de Cuero",
-        imagen: "./assets/img/Ropa/ropa4.jpg",
-        precio: 450,
-        categoria: "Chaquetas"
-    },
-    {
-        id: 5,
-        nombre: "Vaqueros Clásicos",
-        imagen: "./assets/img/Ropa/ropa5.jpg",
-        precio: 250,
-        categoria: "Pantalones"
-    },
-    {
-        id: 6,
-        nombre: "Bufanda de Lana Tejida",
-        imagen: "./assets/img/Ropa/ropa6.jpg",
-        precio: 35,
-        categoria: "Accesorios"
-    }
 ];

@@ -12,11 +12,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #153243;
+  background-color: #f3ff71;
+  text-align: center;
   border-style: none;
   border-radius: 100px;
   margin: 20px 5px;
-  width: 50px;
+  width: 100px;
   height: 50px;
 }
 
@@ -30,7 +31,7 @@
 }
 
 .btn2 {
-  background-color: #153243;
+  background-color: #f3ff71;
   border-style: none;
   border-radius: 100px;
   width: 50px;
